@@ -1,0 +1,44 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.venv/
+venv/
+ENV/
+env/
+python-runtime/
+.python-dist/
+
+# Environment variables & secrets
+.env
+*.local.env
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+.eggs/
+*.zip
+
+# Internal walkthrough & local notes
+PROJECT_WALKTHROUGH.md
+
+# IDE and Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Testing & Coverage
+.pytest_cache/
+.coverage
+htmlcov/
+.ruff_cache/
+
+# NautilusTrader runtime catalogs and logs
+catalog/
+*.log
+*.parquet

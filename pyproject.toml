@@ -1,0 +1,34 @@
+[project]
+name = "btc-short-straddle"
+version = "0.1.0"
+description = "NautilusTrader BTC Options Short Straddle Trading System (Bybit Testnet)"
+requires-python = ">=3.12"
+dependencies = [
+    "nautilus_trader>=1.231.0",
+    "pydantic>=2.10.0",
+    "python-dotenv>=1.0.0",
+]
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+exclude = [
+    ".venv",
+    "venv",
+    "python-runtime",
+    ".python-dist",
+    "catalog",
+    "__pycache__",
+]
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I"]
+ignore = ["E501"]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+python_classes = ["Test*"]
+python_functions = ["test_*"]
+addopts = "-v"

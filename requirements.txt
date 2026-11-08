@@ -1,0 +1,7 @@
+# NautilusTrader BTC Options Straddle Requirements
+# Python 3.12+
+nautilus_trader>=1.231.0
+pydantic>=2.10.0
+python-dotenv>=1.0.0
+pytest>=8.0.0
+ruff>=0.8.0

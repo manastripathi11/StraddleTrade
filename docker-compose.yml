@@ -1,0 +1,25 @@
+version: "3.8"
+
+services:
+  straddle-trader:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: btc-straddle-trader
+    restart: unless-stopped
+    env_file:
+      - .env
+    environment:
+      - PYTHONUNBUFFERED=1
+      - BYBIT_TESTNET=true
+      - TRADING_ENVIRONMENT=testnet
+    volumes:
+      # Optional: mount logs or persistent catalog data
+      - ./logs:/app/logs
+    stop_signal: SIGINT
+    stop_grace_period: 30s
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "20m"
+        max-file: "5"

@@ -1,0 +1,29 @@
+# Git
+.git
+.gitignore
+
+# Virtual environment & runtimes
+.venv/
+venv/
+python-runtime/
+.python-dist/
+
+# Python bytecode
+__pycache__
+*.pyc
+*.pyo
+*.pyd
+
+# Testing & caches
+.pytest_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Environment files
+.env
+*.local.env
+
+# Logs and data
+catalog/
+*.log
